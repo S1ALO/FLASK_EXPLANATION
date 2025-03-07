@@ -1,0 +1,17 @@
+Task 1
+Task 1ai:
+Research- Hardware use, Software use, Newly emerging tech, How digital solutions meet different users needs, Industry specific guidelines and regulations
+
+Task 1aii:
+Proposal- Research, Business Context, User Experience(Target Audience, User Stories), Empathy Map, KPIs, 
+
+Task 1b:
+Website design- stylesheet, wireframe, site map
+Algorithm design- Decomposition, flowcharts, 
+Database design- Conceptual, Logical, Physical, ERD, dataflow
+Test Plan- Testing Types(Unit, Integration, User Acceptance), Test strategy(Black-Box, White-Box, Regression, Load)
+Documentation- Technical, Non-Technical
+
+Task2
+Task 2a:
+Web app development- commenting, versioning, naming conventions, password hashing, 
