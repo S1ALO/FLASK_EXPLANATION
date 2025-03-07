@@ -3,7 +3,8 @@ Task 1ai:
 Research- Hardware use, Software use, Newly emerging tech, How digital solutions meet different users needs, Industry specific guidelines and regulations
 
 Task 1aii:
-Proposal- Research, Business Context, User Experience(Target Audience, User Stories), Empathy Map, KPIs, 
+Proposal- Research, Business Context, User Experience(Target Audience, User Stories), KPIs, User Acceptance Criteria, Functional and Non-Functional Requirements
+Proposal cntd- Decomposition of problems to be solved to implement Functional and Non-Functional requirements, Description of proposed solution
 
 Task 1b:
 Website design- stylesheet, wireframe, site map
