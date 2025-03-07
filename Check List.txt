@@ -4,7 +4,9 @@ Research- Hardware use, Software use, Newly emerging tech, How digital solutions
 
 Task 1aii:
 Proposal- Research, Business Context, User Experience(Target Audience, User Stories), KPIs, User Acceptance Criteria, Functional and Non-Functional Requirements
-Proposal cntd- Decomposition of problems to be solved to implement Functional and Non-Functional requirements, Description of proposed solution
+cntd- Decomposition of problems to be solved to implement Functional and Non-Functional requirements, Description of proposed solution (How its built, its content/pages)
+cntd- Justification of how it meets the needs of clients and users,
+cntd- Justification of how relevant regulatory guideleines and legal reequirements in relation to software dev and the industry will be addressed.
 
 Task 1b:
 Website design- stylesheet, wireframe, site map
@@ -15,4 +17,30 @@ Documentation- Technical, Non-Technical
 
 Task2
 Task 2a:
-Web app development- commenting, versioning, naming conventions, password hashing, 
+Web app development- commenting, versioning(every function and release note added in folders), naming conventions, password hashing
+
+Task 2b:
+Asset Log (list/source/justification)- Images, Copywrite content, Icons and UI elements, Sample Data for testing
+
+Task 2c:
+Testing-  Functional Testing(Screenshots, Valid Inputs, Invalid Inputs, Edge Cases[Cancelling a booking, Rebooking], Performance Tests), 
+
+Task 2d:
+Daily Sprints- Daily Goal, Logs and Tests 
+
+Final Deliverables: all PDFs
+Final Prototype Code (In folder-all files PDFs)
+Asset Log (Filled template with sources and explanations)
+Updated Test Strategy (Document with test cases and results)
+Daily Sprint Log (Daily progress and iterations)
+Version Control and Change Log (File structure showing versioning and release notes)
+
+Task 3
+Task 3a:
+Surveys- Technical, Non-Technical, Observation of users(User experience record)
+Analysis of feedback gathered
+
+Task 3b:
+Evaluation of the assets and content within their prototype- Appropriateness of the assets selected, Validity and reliability of the sources used, 
+contd- Legal and ethical implications of using the identified assets you have included
+Evaluation of project outcomes
