@@ -34,3 +34,72 @@ How software is used within the context of the tourism and leisure sector
 
 Newley emerging technologies
 • Interactive maps
+• Augmented reality (AR)
+• Blockchain technology
+• Virtual reality
+• Biometric technology
+
+How digital solutions could be used to meet different user needs
+• Appropriate and effective functionality
+• Reduction of pain points
+• Accessibility considerations
+• Compatibility
+• Availability
+• Good user experience
+• Cultural awareness and diversity
+
+Industry specific guidelines and regulations
+• The data protection act 2018 (UK GDPR)
+everyone responsible for using personal data has 
+to follow strict rules called ‘data protection principles’. They must make sure the information 
+is: 
+o Used fairly, lawfully and transparently
+o Used for specified, explicit purposes
+o Used in a way that is adequate, relevant and limited to only what is necessary
+o Accurate, and where necessary, kept up to date
+o Kept for no longer than is necessary
+o Handled in a way that ensures appropriate security, including protection against 
+unlawful or unauthorised processing, access, loss, destruction or damage
+(Data protection: The Data Protection Act - GOV.UK (www.gov.uk))
+
+• Computer misuse act 1990: this act makes it an offence to make, adapt, supply or obtain 
+articles for use in unlawfully gaining access to computer material or impairing the operation 
+of a computer. Access is defined as:
+o Altering or erasing the computer programme or data
+o Copying or moving the programme or data
+o Using the programme or data
+o Outputting the programme or data from the computer in which it is held
+(The Computer Misuse Act 1990 | Department of Health (health-ni.gov.uk)
+• Digital economy act 2017: the act aims to make the UK a leader in the digital economy. The 
+act will:
+o Empower consumers and provide better connectivity so that everyone has access to 
+broadband wherever they live
+o Build a better infrastructure for the digital future
+o Enable better public services using digital technologies
+o Provide important protections for citizens from spam email and nuisance calls and 
+protect children from online pornography
+(Digital Economy Act 2017 - GOV.UK (www.gov.uk))
+• W3C WCAG 2: WCAG 2 is developed through the W3C process in cooperation with 
+individuals and organisations around the world, with the goal of providing a single shared 
+standard for web content accessibility that meets the needs of individuals, organisations and 
+governments internationally. WCAG is primarily intended for:
+o Web content developers
+o Web authoring tool developers
+o Web accessibility evaluation tool developers
+o Others who want or need a standard for web accessibility, including for mobile 
+accessibility
+There are four main principles of accessibility
+o Perceivable: information and user interfaces components must be presentable to 
+users in ways they can perceive
+o Operable: user interfaces components and navigation must be operable
+o Understandable: information and the operation of user interface must be 
+understandable
+o Robust: content must be robust enough that it can be interpreted reliably by a wide 
+variety of user agents, including assistive technologies (Introduction to 
+Understanding WCAG | WAI | W3C)
+For each guideline, there are testable success criteria. The success criteria are at three levels: 
+A, AA and AAA. The success criteria are what determine conformance and compliance with 
+WCAG.
+(WCAG 2 Overview | Web Accessibility Initiative (WAI) | W3C)
+• PEP 8 – the style guide for python code: these are the coding conventions for python code 
+comprising the standard library in the main python distribution.
