@@ -1,0 +1,402 @@
+Activity A(ii)
+In this task I will produce a detailed proposal for a digital solution that I will develop to meet the 
+needs of the client and the existing and potential users. This will all be supported by my research in 
+Activity A(i)
+The business context
+The software development company I work for has secured a contract to develop a solution for a 
+local attraction, Riget Zoo Adventures (RZA).
+RZA offers: 
+• a safari-style wildlife zoo 
+• an on-site hotel 
+• educational visits. 
+The clients (owners of RZA) would like to develop a digital solution that will: 
+• provide customers with help and information about the attractions and facilities 
+• provide materials to support educational visits 
+• allow customers to: 
+o reserve and book tickets for the zoo 
+o check availability and book a stay at the hotel. 
+The client has carried out some market research with existing customers to identify features that 
+could be included in the digital solution. The suggested features by the client are: 
+• account registration to allow customers to manage their bookings 
+• accessibility features to support a wide range of users 
+• a loyalty and reward scheme
+The functional and non-functional requirements of the solution
+Functional requirements
+The functional requirements are the requirements that are needed for the solution to function, 
+without the functional requirements the solution would not be able to function at all. For example, a 
+functional requirement is to allow customers to reserve and book tickets for the zoo which is 
+required for the solution to function. The functional requirements are as follows:
+• the solution provides customers with help and information about the attractions
+• the solution provides customers with help and information about the facilities
+• the solution provides materials to support educational visits
+• the customer can reserve tickets for the zoo
+• the customer can book tickets for the zoo
+• the customer can check availability and book a stay at the hotel
+Non-functional requirements
+The non-functional requirements are the requirements that are not needed for the solution to 
+function, but would preferably be implemented because they will enhance the quality of the 
+solution. For example, a non-functional requirement is to allow registration so customers can 
+manage their bookings which is not required in order for the solution to function but would be 
+preferable to include as they can then manage their bookings which adds on functionality. The nonfunctional requirements are as follows:
+• the solution has a loyalty and reward scheme
+• customers can register an account
+• customers can manage their bookings when they have created their account
+• the solution has accessibility features to support a wide range of users
+• users can delete their account
+• users can update their account details
+• solution is able to load quickly under high amount of site users concurrently
+• data is hashed securely
+• SQL queries used placeholders to prevent injection attacks
+• Codebase follows PEP-8 standards and conventions
+• Codebase is modular, well commented and follows best programming conventions
+• Codebase is easy to maintain and client (RZA) can hire a 3rd party to expand on the codebase
+• Solution follows W3C WCAG 2 standards and conventions
+• Solution is compliant with all rules, guidelines and regulations identified during Activity A(i)
+• Solution is mobile responsive
+• Solution is easy to use, navigate, interpret and is accessible
+• Database locks itself up when several queries are being made at the same time in different 
+stages as a security measure 
+• Any forms that are submitted used the HTTP protocols GET or POST to ensure the solution is 
+secure where appropriate
+Decomposition of the problems needed to implement the functional and nonfunctional requirements of the solution
+The problems needed to implement the functional and the non-functional requirements of the 
+solution can be decomposed into the following sections:
+The solution provides customers with help and information about the attractions and facilities: I 
+will create 2 help and information pages specifically for the attractions and facilities using only 
+relevant information and displaying it in a WCAG 2 complaint way that is easy to use, understand and 
+can be clearly interpreted. The pages will also be accessible via the navigation bar at the top of the 
+page. Any images will also use the HTML alt tag so that screen readers can read out the description 
+of the image for any visually impaired users or if the page does not load correctly and the HTML 
+autofocus attribute will also be used to enable users to navigate the solution without a mouse.
+The solution provides materials to support educational visits: I will create a page that has the most 
+accurate and relevant materials relating to the zoo and the animals in the zoo which is displayed in a 
+easy to understand and access grid, where each item in the grid is a card from the bootstrap web 
+framework with an image of the material along with a brief description, the user will then be able to 
+click on a ‘More information’ button where they can view more information about the material. The 
+admins of the solution will also be able to dynamically add more information which will then be 
+added onto the page.
+The customer can reserve or book tickets for the zoo and customers can manage their bookings: I 
+will create a page where a user can choose to either book or reserve a ticket for the zoo on a 
+particular date. If the user chooses to book, then they will pay instantly by adding their card details. 
+If the user instead chooses to reserve a ticket, then the ticket will be reserved for them, and they will 
+instead pay for the ticket upon arrival at the zoo. On a separate page, the user will be able to see a 
+list of all of their bookings where they can update their booking/reservation or cancel their 
+bookings/reservation. All of the data for the bookings/reservations will be inserted into a SQL 
+database using parameters to prevent injection attacks, and their sensitive information, such as 
+credit card information information will be hashed.
+The customer can check availability and book a stay at the hotel: I will create a page where the user 
+can check the availability of the hotel which will display how many rooms there are left. If there are 
+rooms left then the user will be able to book a stay at the hotel where they will choose the room, 
+number of nights to stay and the date and then they will pay for the booking on the same page. All of 
+the data for the bookings will be inserted into a SQL database using parameters to prevent injection 
+attacks, and their sensitive information will be hashed.
+The solution has a loyalty and reward scheme: I will create function for both the loyalty and the 
+reward scheme where when the user makes a hotel booking, or books/reserves tickets for the zoo, 
+they will receive points that are added on to their account. The points can then be used to book 
+tickets for free for either the hotel booking or the zoo and can be used for getting discounts when 
+booking the hotel or the zoo.
+Customers can create an account, delete their account or update their account details: I will create 
+a page where the user can create an account where their data will be hashed and inserted into the 
+SQL database using parameters to prevent injection attacks with backend and front end verification 
+to prevent any invalid values. The user will also have to agree to the terms & conditions of the 
+solution before they are able to create their account. 
+I will create a page where the user can view their accounts details and they can update any of them 
+so the values in the SQL database for their account will just be updated using the same verification 
+and security features as creating an account. On the same account page the user will have the option 
+to delete their account which will execute the SQL query to delete their account from the database.
+The solution has accessibility features to support a wide range of users: I will create a pop up page 
+which will be accessible via the footer in the solution which will have: 
+• a translate function so the user can translate the language of the entire solution into any 
+language they want by using the google translate widget API
+• a font size slider to the user can change the font size of the page by sliding a circle up and 
+down a slider
+• a dark mode toggle so the user can change the colour of the solution from black to white by 
+toggling the button
+The solution will also use HTML alt tags and autofocus attributes to ensure the solution can be read 
+by screen readers and to enable users to navigate the solution without a mouse. All of the 
+accessibility settings will be saved in the database so that any users who have an account, when they 
+come back to the solution their accessibility settings will be queried from the database and 
+automatically applied. The settings will also be saved in the session so that any users who do not 
+have an account will also have their accessibility settings saved and applied through out the solution 
+so they do not have to change their accessibility settings when ever they go on a new page.
+The solution follows W3C WCAG 2 guidelines and other web standards and is easy to use, navigate 
+and interpret: I will use the research identified during Activity A(i) along with other web 
+development guidelines that I might come across to ensure the solution is easy to use, navigate and 
+interpret. I will use these guidelines during development and frequently evaluate how well the 
+solution meets these guidelines.
+The solution is compliant with all rules, guidelines and regulations identified during Activity A(i): I 
+will use the research carried out during Activity A(i) to ensure compliance/conformance with all the 
+rules and guidelines and will frequently revise this research during development to ensure the 
+compliance of the solution. I will also clear the session data from the browser after 1 day and only I, 
+the developer will have access to the database which helps to ensure compliance with data related 
+regulations.
+The solution is mobile responsive: I will use the bootstrap web framework templates which are 
+mobile responsive and where bootstrap is not used I will use CSS media queries along with firefox 
+developer tools to make the solution mobile responsive.
+Data is hashed securely, solution prevents SQL injection attacks and HTTP secure protocols are 
+used: I will use the hashlib library built into python which uses the MD5 hashing algorithm to 
+securely hash user data, the data can also not be un-hashed which further ensures the security of 
+the data. I will also use placeholders in all SQL queries so at to not directly insert user data into the 
+query and thus prevents injection attacks. I will also use the HTTP protocols with the HTML METHOD 
+for forms to use GET or POST where appropriate to prevent any man in the middle attacks and that 
+the data is sent to the back-end securely.
+Codebase follows PEP 8 standards, follows best programming conventions and is modular and well 
+commented and client (RZA) can expand on it: I will use common PEP 8 coding standards 
+throughout the development of the solution by using the PEP 8 documentation during development 
+to ensure it is following the best conventions. Any other programming conventions I may come 
+across such as the conventions for flask, the python micro web framework I will be using will also be 
+considered. I will also break the codebase up into reusable functions and classes and comment code 
+where necessary. Because of this the client (RZA) will be able to easily hire a 3rd party to carry out 
+maintenance or expand upon the codebase easily which will also help to further meet their needs.
+Solution is able to load quickly under high amount of site users concurrently and database locks 
+itself up: I will use svg’s instead of images where I can so the content is able to load immediately 
+instead of having to fetch the image and will refresh a page where ever there has been an update to 
+ensure that the content on the page is displayed as quickly as possible. I will also be using SQLITE 3 
+which will automatically lock itself up a security measure whenever there are too many queries being 
+executed at the same time but in different stages which helps prevent attacks.
+The key performance indicators (KPIs) and user acceptance criteria for the proposed 
+solution
+KPIs for the proposed solution
+KPIs are the metrics that are used to assess the effectiveness, efficiency and speed of the 
+development of the solution. They can be used to change or make improvements with the process of 
+the development of the solution and are an absolute necessity for software development. The KPIs 
+are as follows:
+• Velocity: the estimate of the rate in which I can implement features/functional or nonfunctional requirements
+• Cycle time: the time it takes for the solution to be fully developed, it is the time from the 
+start of development up until it ends
+• Security: the number of security issues there are and how secure the solution is
+• Satisfaction: used to assess the level of satisfaction of the user/customer
+• Test coverage: the percentage of the codebase that is covered by automated tests
+• Bug resolution: the amount of time it takes to resolve the software defects/bugs
+• Defects: the number of defects in the software
+• Codebase cleanup: the amount of codebase that needs to be deleted or changed
+• Code rework: gauges how much your code changes overtime (13 top software development 
+KPIs you should track in 2024 (pluralsight.com)
+• Change rate failure (CFR): tallies the percentage of deployments and changes that cause a 
+failure in production or after release (13 top software development KPIs you should track in 
+2024 (pluralsight.com)
+• Mean time to recovery (MTTR): the average time it takes a team to restore service after a 
+system failure (13 top software development KPIs you should track in 2024 (pluralsight.com)
+• Cumulate flow: expresses where most of your tasks and the time spent on them fall in the 
+production pipeline (13 top software development KPIs you should track in 2024 
+(pluralsight.com)
+• Deployment frequency: covers how often code is deployed into staging, testing or 
+production departments (13 top software development KPIs you should track in 2024 
+(pluralsight.com)
+• Queue time: the average time tickets sit in a waiting stage (13 top software development 
+KPIs you should track in 2024 (pluralsight.com)
+• Scope completion rate: the percentage of tickets completed in a code sprint (13 top software 
+development KPIs you should track in 2024 (pluralsight.com)
+• Scope added: the percentage of tickets or story points added after a sprint begins (13 top 
+software development KPIs you should track in 2024 (pluralsight.com)
+User acceptance criteria for the proposed solution
+User acceptance criteria are the conditions that must be satisfied for the solution to be accepted 
+(Acceptance Criteria: Everything You Need to Know Plus Examples (scrumalliance.org)). For example, 
+the user expects to be able to reserve and book tickets for the zoo. The user acceptance criteria is as 
+follows:
+• the solution provides customers with help and information about the attractions
+• the solution provides customers with help and information about the facilities
+• the solution provides materials to support educational visits
+• the customer can reserve tickets for the zoo
+• the customer can book tickets for the zoo
+• the customer can check availability and book a stay at the hotel
+• the solution has a loyalty and reward scheme
+• customers can register an account
+• customers can manage their bookings when they have created their account
+• the solution has accessibility features to support a wide range of users
+• users can delete their account
+• users can update their account details
+• Solution is mobile responsive so users on a wide range of devices are all able to access 
+solution
+• Solution is easy to use, navigate, interpret and is accessible
+• Solution follows W3C WCAG 2 standards and conventions
+• Solution is compliant with all rules, guidelines and regulations identified during Activity A(i)
+• User data is hashed securely and the database is secure so their data is safe
+Description of the proposed solution
+The proposed solution will be a full stack website made with HTML, CSS, JavaScript and Python. The 
+back-end of the solution will be made using flask, the python micro web framework and the 
+database will be SQLITE 3 which is capable of storing up to 110 TB of data, which is very suitable for 
+the client (RZA). Throughout the website, I will use the bootstrap web framework to get templates 
+for the website. The solution will meet all of the functional and the non-functional requirements and 
+the suggested features identified by the client.
+The solution will have an index page with a navigation bar at the top of the website and a footer at 
+the bottom. The users will be able to access all pages via the navigation bar and there will be an 
+admin portal located in the footer so admins can login or create admin account. The accessibility 
+popup will also be in the footer so the user is able to change their accessibility settings and the 
+settings will stay applied throughout the website. The website will have both front-end and back-end 
+verification to prevent any invalid input being inserted into the database. 
+All content and information used on the page will be 100% reliable and accurate and the information 
+will be sourced from only reputable sources. The solution will also be mobile responsive using CSS 
+media queries and bootstrap templates so the solution can be viewed on a wide range of devices. 
+There will also be accessibility features including all of the features mentioned during the 
+decomposition of accessibility features, along with HTML attributes such as alt and autofocus which 
+add descriptions to images for screen readers and enable the user to navigate the solution without a 
+mouse, respectively. 
+The solution will also follow all guidelines and regulations by both using the research in Activity A(i) 
+and by using any additional guidelines and regulations discovered during the development of the 
+solution. This will include compliance with web development standards such as W3C WCAG 2 and 
+the data protection act 2018. All of the data will be hashed securely using the hashlib library built 
+into python which uses the MD5 hashing algorithm, this means the data hash further adds security 
+since the data cannot be un-hashed. Only the absolutely necessary data will also be inserted into the 
+database to protect the users and only I will have access to the database as well. The session data 
+from the browser will be cleared after 1 day as well so no data is kept for any longer than is actually 
+needed. All SQL queries will use placeholders too to prevent injection attacks and prevent the user 
+from directly injecting any harmful data into the database. All HTML forms that are submitted will 
+also use the appropriate HTTP protocols such as GET and POST to prevent anyone intercepting the 
+data when it is being transferred to the backend which also just adds on an extra layer of security.
+There will be 2 pages where the users can get help and information about the attractions and 
+facilities, where both will be static with, as mentioned before, only the most reliable information 
+sourced from reputable sources. 
+There will be a page where the user can get materials to support educational visits which will be 
+dynamic wherein admins can add materials such as facts about a red panda at the zoo and the 
+materials will then be displayed on the page where all material is laid out in a grid method, each 
+piece of material will have an image along with a brief description of the piece of material and a 
+‘More information’ button which will bring the user to a separate page for a full description and extra 
+pieces of information on that particular piece of material. 
+There will be a page where the user can reserve and book tickets for the zoo on a particular date, the 
+users bookings will then be displayed on a separate page and the user will be able to manage their 
+bookings/reservations wherein they can either update the booking/reservations or cancel the 
+booking/reservations. If the user books their tickets then they will pay for the tickets on the same 
+page, otherwise the user will be told to pay for the reservation upon arrival at the zoo. The tickets for 
+the zoo will cost £15 per ticket.
+There will also be a page where users can check for availability and then book a stay at the on-site 
+hotel, users will be able to view their hotel bookings on the same page as their ticket bookings or 
+reservations and can either update their bookings or cancel them. The user will pay for the booking 
+on the page. The user will be able to choose their check in date, their check out date, the number of 
+rooms they want up to 3, the number of guests and how many beds they want per room between 1 
+and 3. I have decided that it will cost 20 pounds per night to stay at the hotel and an extra 10 pounds 
+per room excluding the first room.
+The page that was mentioned right above is the page where users can view their tickets and their 
+hotel bookings. They will be able to update any of the tickets/bookings and cancel them.
+There will be a user login page, a user register page, an admin page and an admin register page. Both 
+register pages will not allow the user to create their account until they agree to the terms and 
+conditions which ensures they understand and agree to the terms and conditions of the solution.
+There will be an account page where users/admins are able to view the details of their accounts and 
+update any details, they can also choose to delete their account.
+Finally there will be a loyalty and a reward scheme where users can earn points for booking a stay at 
+the on-site hotel or booking/reserving tickets. The users can then spend their points on a free hotel 
+stay or free zoo tickets. If the user does not have enough points to get a free stay or zoo tickets then 
+they can choose either at a discounted price. 
+During the development of the solution I will be using the Agile software development methodology 
+wherein I implement a feature/functional or non-functional requirement and then fully test all of the 
+inputs and outputs with valid, invalid and extreme data to ensure that the feature is fully functional 
+and validates data to prevent any invalid data being inserted. I will only move onto the 
+implementation of the next feature/functional or non-functional requirement when I have fully 
+tested the previous feature and it has passed all tests successfully. The reason for me using the Agile 
+method over an alternative like Waterfall wherein all tests are performed at the end of the 
+development is because I believe this allows for greater flexibility, takes less time, enables me to 
+perform more thorough testing and is more suitable.
+Justification of:
+I will divide the justification of the proposed solution into three parts.
+How the recommended solution meets the needs of the client and the users
+The recommended solution meets the needs of the clients as it will include all of the functional and 
+the non-functional requirements of the solution including the suggested features by the client which 
+they identified during market research. This alone will ensure that their needs are met but on-top of 
+that the solution will also have admins which will enable the client to continually add new materials 
+to support educational visits without having to pay to a 3rd party to add extra materials statically with 
+just HTML. It will also meet the needs of the client as the solution will hash all of the users data, use 
+secure HTTP protocols and use placeholders in SQL queries to prevent injection attacks. 
+The codebase will also be extremely modular, using functions and classes where appropriate to 
+promote readability and reusability within the codebase. It will also include comments and use 
+appropriate naming conventions as well as following PEP 8 standards and conventions. This will also 
+mean that the recommended solution meets the needs of the client as they can very easily hire a 3rd
+party to either carry out maintenance on the solution if needed or they can hire a 3rd party to easily 
+expand the solution. This means they can very easily scale the recommended solution as needed 
+which is extremely valuable.
+The recommended solution will also meet the needs of the users since the requirements that the 
+existing customers identified will all be included in the solution. This means that the users can create 
+an account which will allow them to manage their booking, the solution will also have accessibility 
+settings which enables a much wider and diverse range of users to be able to easily use the 
+recommended solution and the users will also be rewarded for using the solution with free bookings 
+or discounts. The users data will be hashed without any employees or me, the developer having 
+access to their details and their data will also be cleared from the browser session after 1 day. All of 
+the users data will be handled securely and appropriately using HTTP protocols such as GET and 
+POST as well to ensure secure transmission of their data. The recommended solution will also follow 
+W3C WCAG and other relevant W3C guidelines to ensure the solution can be easily understood, 
+navigated and interpreted. The guidelines are used as they guarantee that the users needs can be 
+met.
+Because all of the users needs will be met, it further reinforces the fact that the clients needs will be 
+met because when the needs of the users are fully met then the needs of the clients will be met or at 
+least partially met. The recommended solution will also be fully complaint with all rules and 
+regulations in relation to both software development and the tourism and leisure sector, this 
+prevents the client from having to potentially pay any fines or facing any penalties which will further 
+ensure their needs are met as legal compliance is always expected by any client, including RZA.
+How potential risks will be mitigated
+The potential risks can be divided into the following parts:
+Coding the solution
+• Not enough time: I will plan development of the solution ahead of time and allocate a 
+certain amount of time to the implementation of each feature/functional or non-functional 
+requirement and the testing of said feature. If I run of time during the implementation or 
+testing then I will move onto the next planned implementation and comeback to the 
+previous feature if time permits
+• Errors in the codebase/solution: as mentioned before, I will be using the Agile software 
+development methodology to test a feature/functional or non-functional requirement before 
+moving onto the next one (unless I run out of time as mentioned directly above) with all 
+possible inputs and outputs using valid, invalid and extreme data which will help to prevent 
+against all errors in the codebase/solution
+• Not enough resources: I will plan for resources ahead of time
+• Not enough knowledge: I will be using the bootstrap web framework for bootstrap templates 
+which will fill any knowledge gaps to do with front-end. If I do not know how to do 
+something otherwise then I will use the respective documentation for that particular 
+language to figure out how to do it properly. If I do not know how to do something in flask 
+then I will use the flask documentation, python documentation for python and then the 
+MDN web documentation for anything else
+Accessibility
+• Solution being only in English: I will use the google translate API widget which enables the 
+user to translate the language of the solution into any language
+• User not being able to navigate the solution with only a keyboard: I will use the HTML 
+autofocus attribute to ensure the user can always navigate the solution using on the 
+keyboard
+• Solution not following web standards: I will use the W3C WCAG and other guidelines 
+identified during the research phase in Activity A(i) to ensure that the solution is following 
+web standards. I will also use the W3C HTML checker to ensure that the HTML code is up to 
+web development standards and will frequently revise any other relevant guidelines I come 
+across during development to ensure that the solution is at all times following web standards
+• Solution not being accessible to assistive technologies: I will use HTML alt tags on images to 
+ensure that the whole solution can be read and accessed by a screen reader
+• User not being able to read font size: I will add in a range slider where the user is able to 
+adjust the font size of the solution 
+• User not being able to use white theme: I will add in a dark theme toggle button to change 
+the colour of the solution from black to white
+The solutions compliance with rules and regulations in relation to the software development 
+sector and the tourism and leisure sector:
+• Solution not being complaint with rules and regulations: I will use the research carried out 
+during Activity A(i) to ensure compliance with the rules and regulations during the 
+development of the proposed solution along with any other rules and regulations that may 
+be identified during the development process. If at any point the recommended solution is 
+not complaint then I will pivot to make sure that the recommended solution is compliant
+• User not agreeing with terms and conditions: I will use JavaScript to block the user from 
+creating an account before they have first read and agreed to the terms and conditions 
+which is legally binding
+• Handling of user data: all user data will be hashed using the MD5 hashing algorithm which 
+means the data cannot be un-hashed and therefore no one who is looking in the database 
+will be able to decrypt the data. Any data that is stored in the browser (e.g. cache) will be 
+cleared after 1 day and only I, the developer will have access to the database
+Web responsiveness: 
+• Solution not being web responsive: I will use CSS responsive sizing such as rem, view height, 
+view width and percentages to ensure the elements on each page resize accordingly to the 
+size of the viewport. I will also use bootstrap templates which are responsive by default. I will 
+also use CSS media queries if necessary to manually set the positioning of elements on the 
+page where it starts to break at certain view port sizes.
+Links to the correct/relevant pages:
+• Links on page not going to the correct/relevant pages: I will use the dynamic flask function 
+url_for() to ensure that all links in the navigation bar, footer and anywhere else are rerouting 
+to the flask function to ensure the user is being redirected to the correct URL
+Quality of the content:
+• Content not being relevant: I will use only 100% relevant and reliable information from well 
+established and trustworthy sources. For example, a wildlife rescue site
+How relevant regulatory guidelines and legal requirements in relation to software 
+development and the tourism and leisure sector will be addressed
+I will address all relevant regulatory guidelines and legal requirements by first using the research 
+carried out during Activity A(i) and then frequently analysing the recommended solution/codebase 
+to ensure that they have been addressed. If I find that the guidelines and legal requirements have 
+not been addressed correctly then I will change the solution until it has met the guidelines and legal 
+requirements. As mentioned extensively before, this will include following W3C guidelines along with 
+legal requirements such as the data protection act 2018 meaning all data will be hashed securely and 
+only the relevant data will be kept for as long as necessary. I will also implement some JavaScript to 
+prevent the user/admin from creating an account until they have read and agreed to the terms and 
+conditions which will help to ensure that the user has fully agreed and understood what data they 
+are exchanging for using the recommended solution.
+If I encounter regulatory guidelines or legal requirements that have not been identified during the 
+research and that are relevant to the recommended solution then I will pivot to ensure that the 
+solution in conformance with these guidelines/requirements
