@@ -1,0 +1,36 @@
+Contents
+Activity A(i)
+How hardware is used within the context of the tourism and leisure sector
+How software is used within the context of the tourism and leisure sector
+Newley emerging technologies
+How digital solutions could be used to meet different user needs
+Industry specific guidelines and regulations
+Activity A(ii)
+The business context
+The functional and non-functional requirements of the solution
+Decomposition of the problems needed to implement the functional and non-functional 
+requirements of the solution 
+The key performance indicators (KPIs) and user acceptance criteria for the proposed solution
+Description of the proposed solution
+Justification of:
+How the recommended solution meets the needs of the client and the users
+How potential risks will be mitigated
+How relevant regulatory guidelines and legal requirements in relation to software development 
+and the tourism and leisure sector will be addressed
+
+Activity A(i)
+In this activity, I will be carrying out research why I can use to support me during Activity A(ii) and 
+during the development of the digital solution.
+
+How hardware is used within the context of the tourism and leisure sector
+• The IoT (Internet of Things)
+• Robots
+• Contactless payment
+
+How software is used within the context of the tourism and leisure sector
+• Mobile apps
+• Virtual queues
+• Chatbots
+
+Newley emerging technologies
+• Interactive maps
