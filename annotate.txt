@@ -1,0 +1,71 @@
+Contents
+Style guide (Task1_DesignDocs_styleguide_LL-000013027)...................................................................2
+Wireframes (Task1_DesignDocs_wireframes_LL-000013027)................................................................3
+Home page..........................................................................................................................................3
+User register page...............................................................................................................................4
+User login page ...................................................................................................................................5
+Admin register page............................................................................................................................5
+Admin login page ................................................................................................................................6
+Book/reserve tickets page...................................................................................................................7
+Educational material page...................................................................................................................8
+About us page .....................................................................................................................................9
+Facilities page......................................................................................................................................9
+Attractions page ................................................................................................................................10
+Hotel availability and booking page..................................................................................................11
+User account page ............................................................................................................................12
+Accessibility popup ...........................................................................................................................13
+More information for educational material page .............................................................................14
+Admin upload educational material page.........................................................................................15
+Manage tickets/bookings page .........................................................................................................15
+Manage hotel booking page .............................................................................................................16
+Manage ticket bookings/reservation ................................................................................................17
+Terms and conditons page ................................................................................................................18
+Agree to terms and conditions pop up .............................................................................................18
+Footer................................................................................................................................................19
+Data requirements................................................................................................................................19
+Data dictionary (Task1_DesignDocs_DataDictionary_LL-000013027)..............................................19
+Conceptual data model (Task1_DesignDocs_ConceptualModel_LL-000013027) ............................25
+Logical data model (Task1_DesignDocs_LogicalModel_LL-000013027)...........................................26
+Hotel booking data flow diagram (Task1_DesignDocs_DataFlow_LL-000013027)...........................26
+Solution hierarchy (Task1_DesignDocs_WebsiteHeirarchy_LL-000013027).....................................28
+Algorithms.............................................................................................................................................29
+Register algorithm (Task1_DesignDocs_RegisterAlgorithim_LL-000013027)...................................30
+Login algorithm (Task1_DesignDocs_LoginAlgorithim_LL-000013027)............................................34
+Book or reserve (get tickets) tickets algorithm (Task1_DesignDocs_GetTicketsAlgorithim_LL000013027).......................................................................................................................................37
+Upload educational material algorithm (Task1_DesignDocs_AddEducationalMaterialAlgo_LL000013027).......................................................................................................................................46
+Hotel booking algorithm (Task1_DesignDocs_HotelBookingAlgorithim_LL-000013027).................52
+Test strategy (Task1_DesignDocs_TestStratergy_LL-000013027) .........................................................67
+Sources used .........................................................................................................................................75
+
+logo
+font
+colour palette
+
+This is the home page. At the top is the navigation bar with the RZA logo, I would have liked to make 
+the text in the logo white since I think that looks better on the navigation bar but I could not make it 
+white. This is the navigation bar the user will see when they are logged out. There are the links to the 
+education page where the user will be able to see educational materials regarding the animals at the 
+zoo and any other relevant information. There is also a link to the about us page as well as the hotel 
+page where users can check availability of the hotel and book. There is a link to the zoo tickets page 
+where the user can book or reserve tickets. There is the links to the page regarding help and 
+information for attractions and then the same for facilities and then the login page. The user will be 
+able to create an account through the login page. Finally there is the about us page which will display 
+a brief history of RZA.
+In the middle of the page is an image of a tiger with the full name of the client along with a very brief 
+and punchy description of what the customer can expect.
+In the bottom is the footer, the footers header is going to have links to the social media accounts of 
+Riget Zoo Adventures and if the user scrolls down on any page the user will be able to see the rest of 
+the footer.
+
+This is the user register page. The user will enter their username, email address, password and then 
+confirm their password. There is a button where the user clicks to agree to the terms and conditions 
+and then a terms and conditions popup will appear. The user agrees to the terms and conditions and 
+then will click the create an account button
+
+This is the login page for the user. There is an image of a red panda on the left to make the page 
+more interesting. On the right the user enters their username and password and then just clicks the 
+sign in button.
+
+
+This is the admin register page. The only difference here between the user register page and the 
+admin register page is that the admin is required to enter in their 6 digit employee ID.
